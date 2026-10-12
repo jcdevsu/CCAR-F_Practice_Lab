@@ -1,0 +1,134 @@
+body {
+  font: 16px system-ui;
+  background: #f3f6fa;
+  color: #17233b;
+  margin: auto;
+  max-width: 900px;
+  padding: 24px;
+}
+
+section,
+article {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 16px 0;
+  box-shadow: 0 3px 14px #17365d18;
+}
+
+button {
+  padding: 10px 14px;
+  margin: 5px;
+  border: 0;
+  border-radius: 8px;
+  background: #0f6b78;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.opt {
+  display: block;
+  border: 1px solid #ccd6e2;
+  padding: 12px;
+  margin: 9px 0;
+  border-radius: 8px;
+}
+
+.config-panel {
+  margin: 16px 0;
+}
+
+#question-count {
+  width: 130px;
+  padding: 8px 10px;
+  border: 1px solid #ccd6e2;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.domain-filter {
+  margin-top: 16px;
+}
+
+#domain-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-top: 8px;
+}
+
+.domain-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #ccd6e2;
+  border-radius: 999px;
+  padding: 6px 12px;
+  background: #f7f9fc;
+}
+
+.domain-summary,
+.review-domain {
+  border: 1px solid #dfe7f1;
+  background: #f9fbff;
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin: 10px 0;
+}
+
+.bad {
+  border-left: 6px solid #b33;
+}
+
+.good {
+  border-left: 6px solid #287d4d;
+}
+
+.review-question h3 {
+  margin-top: 0;
+}
+
+.review-options {
+  list-style: none;
+  padding: 0;
+}
+
+.review-option {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  border: 1px solid #dfe7f1;
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin: 8px 0;
+}
+
+.review-option.selected {
+  background: #fff8e1;
+  border-color: #d99b21;
+}
+
+.review-option.correct {
+  background: #edf8f0;
+  border-color: #287d4d;
+}
+
+.review-option.selected.correct {
+  background: #e5f3e9;
+}
+
+.review-option strong {
+  color: #285d3e;
+  white-space: nowrap;
+}
+
+.explanation {
+  border-top: 1px solid #dfe7f1;
+  padding-top: 12px;
+}

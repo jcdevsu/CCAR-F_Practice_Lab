@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CCAR-F Practice Lab</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>CCAR-F Practice Lab</h1>
+
+      <section id="home">
+        <p>Banco: <b id="count"></b> preguntas.</p>
+
+        <div class="config-panel">
+          <label for="question-count">Número de preguntas por sesión:</label>
+          <input id="question-count" type="number" min="1" step="1" value="60" />
+
+          <div class="domain-filter">
+            <p>Dominios incluidos:</p>
+            <div id="domain-options"></div>
+          </div>
+        </div>
+
+        <button id="start">Generar práctica</button>
+      </section>
+
+      <section id="quiz" hidden>
+        <p>
+          <b id="status"></b>
+          <button id="finish">Finalizar examen</button>
+        </p>
+        <article id="question"></article>
+        <button id="prev">Anterior</button>
+        <button id="next">Siguiente</button>
+      </section>
+
+      <section id="result" hidden>
+        <h2 id="score"></h2>
+        <div id="detail"></div>
+        <button id="review">Ver explicaciones</button>
+        <button id="again">Nueva práctica</button>
+      </section>
+
+      <section id="reviews"></section>
+    </main>
+
+    <script src="questions.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
